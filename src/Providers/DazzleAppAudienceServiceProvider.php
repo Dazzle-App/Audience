@@ -14,7 +14,7 @@ class DazzleAppAudienceServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Blade::directive('audience', function ($expression) {
+        Blade::directive('audienceSignUp', function ($expression) {
             return "<?php echo ($expression)->format('m/d/Y H:i'); ?>";
         });
 
