@@ -24,3 +24,8 @@ I generally like to have the project installed locally, and use Composer to refe
 ```
 
 Once you have added/updated the above. Run `composer install` in the application folder in a terminal.
+
+
+# Testing
+
+This repo is intended to be fully tested. If you have the repo installed locally, as in the development installation instructions above, then you can navigate to the folder on your machine, and should be able to run `vendor/bin/phpunit` to run the entire test suite.
