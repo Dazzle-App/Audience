@@ -1,0 +1,34 @@
+{
+    "name": "dazzle-app/audience",
+    "description": "A Laravel package to accept email signups during prelaunch",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew Huggins",
+            "email": "andrewhuggins@gmail.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^7.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "DazzleApp\\Audience\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DazzleApp\\Audience\\Providers\\DazzleAppAudienceServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "~3.7"
+    }
+}
