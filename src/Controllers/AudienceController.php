@@ -18,4 +18,14 @@ class AudienceController extends Controller
             'email' => $request->email
         ]);
     }
+
+    public function create(Request $request)
+    {
+        $request->validate([
+            'email' => 'required|email'
+        ]);
+        return Audience::create([
+            'email' => $request->email
+        ]);
+    }
 }
