@@ -11,4 +11,6 @@
 [ ] Look into adding spam prevention, recaptcha or something. 
     Or at least making it easy to add.
 
+### Long-term
 
+[ ] Would be kind of nice to maybe connect this automatically to like Mailchimp or some other type service like that.
