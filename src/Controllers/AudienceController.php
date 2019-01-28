@@ -36,7 +36,7 @@ class AudienceController extends Controller
     public function confirm($confirm_code)
     {
         if (! Uuid::isValid($confirm_code)) {
-            return response('', 302);
+            return response('', 400);
         }
 
         $member = Audience::where('confirmation_code', $confirm_code)->first();

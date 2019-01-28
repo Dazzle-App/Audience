@@ -28,6 +28,6 @@ class ConfirmationTest extends TestCase
 
         $response = $this->get('audience/confirm/' . $member->confirmation_code);
 
-        $response->assertStatus(302);
+        $response->assertStatus(400);
     }
 }
