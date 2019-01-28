@@ -32,6 +32,15 @@ abstract class TestCase extends BaseTestCase
 
     protected function getPackageProviders($app)
     {
-        return ['DazzleApp\Audience\Providers\DazzleAppAudienceServiceProvider'];
+        return [
+            'DazzleApp\Audience\Providers\DazzleAppAudienceServiceProvider',
+        ];
+    }
+
+    protected function getPackageAliases($app)
+    {
+        return [
+            'Uuid' => 'Webpatser\Uuid\Uuid',
+        ];
     }
 }

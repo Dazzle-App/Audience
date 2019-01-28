@@ -3,6 +3,7 @@
 namespace Tests\Feature;
 
 use Tests\TestCase;
+use DazzleApp\Audience\Models\Audience;
 
 class AudienceTest extends TestCase
 {
@@ -13,16 +14,20 @@ class AudienceTest extends TestCase
     {
         $response = $this->get('audience');
 
-        $this->assertTrue(true);
+        $response->assertOk();
+        $response->assertViewIs('audience::form');
     }
 
     /** @test */
     public function when_guest_submits_form_with_valid_params_an_audience_entry_is_created()
     {
+        $this->withoutExceptionHandling();
         $params = ['email' => 'some@email.com'];
-        $this->post('audience', $params);
 
-        $this->assertDatabaseHas($this->table, $params);     
+        $this->post('audience', $params);
+        
+        $member = Audience::where('email', $params['email'])->get();
+        $this->assertCount(1, $member);
     }
 
     /** @test */

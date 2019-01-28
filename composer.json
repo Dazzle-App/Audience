@@ -9,7 +9,8 @@
         }
     ],
     "require": {
-        "phpunit/phpunit": "^7.5"
+        "phpunit/phpunit": "^7.5",
+        "webpatser/laravel-uuid": "^3.0"
     },
     "autoload": {
         "psr-4": {
