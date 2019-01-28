@@ -26,8 +26,10 @@ class AudienceTest extends TestCase
 
         $this->post('audience', $params);
         
-        $member = Audience::where('email', $params['email'])->get();
-        $this->assertCount(1, $member);
+        $audience = Audience::where('email', $params['email'])->get();
+        $member = $audience->first();
+        $this->assertCount(1, $audience);
+        $this->assertNotEmpty($member->confirmation_code);
     }
 
     /** @test */

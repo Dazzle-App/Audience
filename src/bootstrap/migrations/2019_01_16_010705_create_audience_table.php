@@ -15,7 +15,7 @@ class CreateAudienceTable extends Migration
     {
         Schema::create('audiences', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('email')->nullable(false);
+            $table->string('email')->nullable(false)->unique();
             $table->string('confirmation_code')->nullable();
             $table->boolean('confirmed')->default(false);
             $table->timestamps();
