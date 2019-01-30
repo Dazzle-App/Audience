@@ -30,4 +30,5 @@ Once you have added/updated the above. Run `composer install` in the application
 
 # Testing
 
-This repo is intended to be fully tested. If you have the repo installed locally, as in the development installation instructions above, then you can navigate to the folder on your machine, and should be able to run `vendor/bin/phpunit` to run the entire test suite.
+
+This repo is intended to be fully tested. If you have the repo installed locally, as in the development installation instructions above, navigate to the folder on your machine, and run `composer test` or `composer test-coverage` to run the entire test suite.
