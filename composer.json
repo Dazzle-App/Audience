@@ -8,9 +8,6 @@
             "email": "andrewhuggins@gmail.com"
         }
     ],
-    "require": {
-        "phpunit/phpunit": "^7.5"
-    },
     "autoload": {
         "psr-4": {
             "DazzleApp\\Audience\\": "src/"
@@ -29,10 +26,15 @@
         }
     },
     "require-dev": {
-        "orchestra/testbench": "~3.7"
+        "orchestra/testbench": "~3.7",
+        "phpunit/phpunit": "^7.5"
     },
     "scripts": {
         "test": "vendor/bin/phpunit",
         "test-coverage": "vendor/bin/phpunit --coverage-html tests/_reports"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
     }
 }
