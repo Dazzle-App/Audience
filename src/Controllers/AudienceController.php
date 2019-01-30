@@ -13,13 +13,6 @@ class AudienceController extends Controller
     {
         return view('audience::form');
     }
-    
-    public function test(Request $request)
-    {
-        return Audience::create([
-            'email' => $request->email
-        ]);
-    }
 
     public function create(Request $request)
     {
