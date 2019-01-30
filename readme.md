@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/dazzle-app/audience.png?branch=master)](https://travis-ci.org/dazzle-app/audience)
+
 # Installation
 
 All you should need to do is `composer require dazzle-app/audience`.

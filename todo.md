@@ -1,5 +1,7 @@
 # Things that need to be done
 
+[ ] Add Travis CI
+
 [ ] Send email with link, with confirmation_code.
     This makes it easy for people to confirm their email address.
 
