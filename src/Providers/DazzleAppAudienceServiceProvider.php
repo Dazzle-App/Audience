@@ -14,9 +14,9 @@ class DazzleAppAudienceServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Blade::directive('audienceSignUp', function () {
-            return view('audience::form');
-        });
+        // Blade::directive('audienceSignUp', function () {
+        //     return view('audience::form');
+        // });
 
         $this->loadMigrationsFrom(__DIR__ . '/../bootstrap/migrations');
 
