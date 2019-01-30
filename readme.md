@@ -19,7 +19,7 @@ I generally like to have the project installed locally, and use Composer to refe
     {
         "type": "path",
         // you can update this to the path to the package on your machine.
-        "url": "./../packages/list"
+        "url": "./../packages/audience"
     }
 ],
 
