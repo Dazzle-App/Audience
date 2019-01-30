@@ -32,7 +32,7 @@ class AudienceController extends Controller
             return response('', 400);
         }
 
-        $member = Audience::where('confirmation_code', $confirm_code)->first();
+        $member = Audience::where('confirmation_code', $confirm_code)->firstOrFail();
         $member->setConfirmed()->save();
         return $member;
     }

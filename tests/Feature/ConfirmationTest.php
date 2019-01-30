@@ -3,6 +3,7 @@
 namespace Tests\Feature;
 
 use Tests\TestCase;
+use Illuminate\Support\Str;
 use DazzleApp\Audience\Models\Audience;
 
 class ConfirmationTest extends TestCase
@@ -29,5 +30,15 @@ class ConfirmationTest extends TestCase
         $response = $this->get('audience/confirm/' . $member->confirmation_code);
 
         $response->assertStatus(400);
+    }
+
+    /** @test */
+    public function valid_uuid_must_be_connected_to_someone()
+    {
+        $validUuidButNotConnectedToAnyone = (string) Str::uuid(4);
+
+        $response = $this->get('audience/confirm/' . $validUuidButNotConnectedToAnyone);
+
+        $response->assertStatus(404);
     }
 }
