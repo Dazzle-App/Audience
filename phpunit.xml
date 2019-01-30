@@ -38,9 +38,4 @@
         <env name="DB_CONNECTION" value="testing" />
         <!-- <env name="DB_DATABASE" value=":memory:" /> -->
     </php>
-    <logging>
-        <!-- <log type="coverage-clover" target="tests/_reports/logs/clover.xml"/> -->
-        <log type="coverage-html" target="tests/_reports/coverage" lowUpperBound="35" highLowerBound="70" />
-        <!-- <log type="testdox-text" target="tests/_reports/testdox/executed.txt"/> -->
-    </logging>
 </phpunit>
