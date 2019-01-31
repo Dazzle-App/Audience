@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/Dazzle-App/Audience.png?branch=master)](https://travis-ci.org/Dazzle-App/Audience)
+[![Build Status](https://travis-ci.org/Dazzle-App/Audience.png?branch=dev)](https://travis-ci.org/Dazzle-App/Audience)
 
 # Installation
 
