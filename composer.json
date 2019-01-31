@@ -30,7 +30,7 @@
         "phpunit/phpunit": "^7.5"
     },
     "scripts": {
-        "test": "vendor/bin/phpunit",
+        "test": "vendor/bin/phpunit --colors=always",
         "test-coverage": "vendor/bin/phpunit --coverage-html tests/_reports"
     },
     "config": {
